@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Bar Styling */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333; /* Dark background */
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.home-icon img {
+  height: 60px;
+  width: 60px;
+}
+
+.home-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons .button {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons .button:hover {
+  background-color: #777;
+}
+
+/* Main Content Styling */
+.content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Services List Styling */
+.services-list {
+  padding: 20px;
+  text-align: center;
+}
+
+.services-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-list li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Button Styling for Services Page */
+.service-button {
+  display: inline-block;
+  background-color: #555;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #777;
+}
+
+/* Pricing Table Styling (Reverted to Original Version) */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+td {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) td {
+  background-color: #e9e9e9;
+}
+
+table caption {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 95%;
+  }
+}
+
+/* Image Styling for Services and Portfolio */
+.image {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image img {
+  width: 35%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Portfolio Gallery Styling */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.portfolio-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-gallery {
+    grid-template-columns: 1fr;
+  }
+}
